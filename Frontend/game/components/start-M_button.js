@@ -20,7 +20,7 @@ export class StartButtonMenu {
         });
         this.startButtonMenu.on('pointerdown', () => {
             this.startSampleM.play();
-            this.relatedScene.scene.start('game');
+            this.relatedScene.scene.start('level1');
         });
     }
 }
