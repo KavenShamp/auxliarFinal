@@ -111,7 +111,7 @@ export class level2 extends Phaser.Scene {
             this.crear_obstaculos(this.hellPlataforma, this.spikes, obstacles)
             this.spikes.setVelocityX(-700);
             this.hellPlataforma.setVelocityX(-700);
-            //this.physics.add.collider(this.box, this.spikes, this.gameOver, null, this)
+            this.physics.add.collider(this.box, this.spikes, this.gameOver, null, this)
             this.physics.add.collider(this.box, this.hellPlataforma)
 
 

@@ -14,7 +14,7 @@ const config = {
   parent: 'game',
   width: 1000,
   height: 600,
-  scene: [intro, startScreen, menu,credits, levels,levelComplete,level1,level2,level3,pause,gameOver],
+  scene: [intro,credits,levelComplete,level1,level2,level3, startScreen,  menu,pause,levels,gameOver],
   physics: {
     default: 'arcade',
     arcade: {

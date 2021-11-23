@@ -53,7 +53,7 @@ export class level1 extends Phaser.Scene {
         this.load.image('box', './assets/images/levels/box.png');
         this.load.image('groundTop', './assets/images/levels/Top.png');
 
-        this.load.image('spikeSide', './assets/images/levels/spikeSide.png');
+        this.load.image('spikeSide1', './assets/images/levels/spikeSide.png');
         /*sonidos*/
         this.load.audio('temaCastillo', './assets/sounds/temaCastillo.mp3')
 
@@ -89,7 +89,7 @@ export class level1 extends Phaser.Scene {
             this.crear_obstaculos(this.castlePlataforma, this.spikes, obstacles)
             this.spikes.setVelocityX(-700);
             this.castlePlataforma.setVelocityX(-700);
-            //this.physics.add.collider(this.box, this.spikes, this.gameOver, null, this)
+            this.physics.add.collider(this.box, this.spikes, this.gameOver, null, this)
             this.physics.add.collider(this.box, this.castlePlataforma)
 
 
@@ -271,7 +271,7 @@ export class level1 extends Phaser.Scene {
                     if (name.name === "spikeBottomCastle") {
                         let spikeAuxX = spikeGrup.create((name.segundos * 700) + positionX, name.posY, name.name).setOrigin(0, 1);
                         positionX += spikeAuxX.width;
-                    } else if (name.name === "spikeSide") {
+                    } else if (name.name === "spikeSide1") {
                         let spikeAuxY = spikeGrup.create((name.segundos * 700), name.posY + positionY, name.name).setOrigin(0, 1);
                         positionY += spikeAuxY.width;
                     }
