@@ -26,7 +26,7 @@ export class level1 extends Phaser.Scene {
 
         this.timmer = 80;//variable del tiempo
         this.tempCounteat = 0;//para resetear las veces de aumento de tiempo
-        this.aumentVel = 0;
+        
         this.typeFood = 10;
         this.energy = null;
         this.valueEnergy = 5;
