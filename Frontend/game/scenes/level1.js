@@ -30,7 +30,7 @@ export class level1 extends Phaser.Scene {
         this.typeFood = 10;
         this.energy = null;
         this.valueEnergy = 5;
-        this.pointsFood = 0;
+        this.pointsFood
      
 
 
